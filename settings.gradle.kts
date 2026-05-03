@@ -1,1 +1,1 @@
-rootProject.name = "WLBase"
+rootProject.name = "WLCommands"
