@@ -1,5 +1,7 @@
 package com.warpedlands.wlcommands.context;
 
+import java.util.Arrays;
+
 public class Bias {
     private ArgumentType[] argumentTypes;
 
@@ -13,6 +15,7 @@ public class Bias {
                 return true;
             }
         }
+        Arrays.stream(argumentTypes).filter()
         return false;
     }
 }

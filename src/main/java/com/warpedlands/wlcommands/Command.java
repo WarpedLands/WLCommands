@@ -8,6 +8,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.)
 @Target(ElementType.)
 
 public @interface Command {
