@@ -1,7 +1,7 @@
 package com.warpedlands.wlcommands;
 
 import com.warpedlands.wlcommands.annotations.CommandExecute;
-import com.warpedlands.wlcommands.annotations.PlayerUUIDArgument;
+import com.warpedlands.wlcommands.arguments.annotations.PlayerUUIDArgument;
 
 import java.util.UUID;
 

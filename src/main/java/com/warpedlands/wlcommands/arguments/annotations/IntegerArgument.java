@@ -1,4 +1,4 @@
-package com.warpedlands.wlcommands.annotations;
+package com.warpedlands.wlcommands.arguments.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,8 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.CONSTRUCTOR)
-public @interface PlayerUUIDArgument {
+@Target(ElementType.METHOD)
+public @interface IntegerArgument {
     String def();
-    boolean other();
 }
