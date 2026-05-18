@@ -1,13 +1,17 @@
 package com.warpedlands.wlcommands.meta;
 
+import com.warpedlands.wlcommands.arguments.checkers.ArgChecker;
+
 public class ArgMeta {
     private final Class<?> argClass;
+    private final ArgChecker argChecker;
     private final boolean isNeeded;
     private final Object defaultValue;
     private final String name;
 
-    public ArgMeta(Class<?> argClass, boolean isNeeded, Object defaultValue, String name) {
+    public ArgMeta(Class<?> argClass, ArgChecker argChecker, boolean isNeeded, Object defaultValue, String name) {
         this.argClass = argClass;
+        this.argChecker = argChecker;
         this.isNeeded = isNeeded;
         this.defaultValue = defaultValue;
         this.name = name;
@@ -27,5 +31,9 @@ public class ArgMeta {
 
     public String getName() {
         return name;
+    }
+
+    public ArgChecker getArgChecker() {
+        return argChecker;
     }
 }

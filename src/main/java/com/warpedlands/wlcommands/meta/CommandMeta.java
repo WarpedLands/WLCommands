@@ -5,22 +5,22 @@ import com.warpedlands.wlcommands.context.Bias;
 import java.lang.reflect.Method;
 
 public final class CommandMeta {
-    private final String commandName;
+    private final String path;
     private final ArgMeta[] neededArguments;
     private final Method execute;
     private final String permission;
     private final Bias bias;
 
-    public CommandMeta(String commandName, ArgMeta[] neededArguments, Method execute, String permission, Bias bias) {
-        this.commandName = commandName;
+    public CommandMeta(String path, ArgMeta[] neededArguments, Method execute, String permission, Bias bias) {
+        this.path = path;
         this.neededArguments = neededArguments;
         this.execute = execute;
         this.permission = permission;
         this.bias = bias;
     }
 
-    public String getCommandName() {
-        return commandName;
+    public String getPath() {
+        return path;
     }
 
     public ArgMeta[] getNeededArguments() {

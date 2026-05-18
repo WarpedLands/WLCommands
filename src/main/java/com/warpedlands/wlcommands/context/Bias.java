@@ -15,7 +15,7 @@ public class Bias {
                 return true;
             }
         }
-        Arrays.stream(argumentTypes).filter()
+        //Arrays.stream(argumentTypes).filter()
         return false;
     }
 }

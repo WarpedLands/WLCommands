@@ -22,6 +22,6 @@ public class CommandListener implements Listener {
 
         }
 
-        CommandContext context = new CommandContext((CommandSender) player, );
+        //CommandContext context = new CommandContext((CommandSender) player, );
     }
 }

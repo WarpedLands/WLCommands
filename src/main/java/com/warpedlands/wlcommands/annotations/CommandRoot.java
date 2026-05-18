@@ -1,6 +1,4 @@
-package com.warpedlands.wlcommands;
-
-import com.warpedlands.wlcommands.meta.CommandMeta;
+package com.warpedlands.wlcommands.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,9 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Retention(RetentionPolicy.)
-@Target(ElementType.)
-
-public @interface Command {
+@Target(ElementType.TYPE)
+public @interface CommandRoot {
     String value();
 }
