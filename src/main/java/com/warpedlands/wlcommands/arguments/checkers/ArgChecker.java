@@ -1,8 +1,10 @@
 package com.warpedlands.wlcommands.arguments.checkers;
 
-public interface ArgChecker {
+public interface ArgChecker<T> {
 
-    String checkLiteralArgument(String literalArgument);
+    boolean checkLiteralArgument(String literalArgument);
 
+
+    T convertLiteralArgument(String literalArgument);
 
 }
