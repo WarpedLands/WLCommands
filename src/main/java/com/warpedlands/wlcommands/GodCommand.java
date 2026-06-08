@@ -2,6 +2,7 @@ package com.warpedlands.wlcommands;
 
 import com.warpedlands.wlcommands.annotations.CommandExecute;
 import com.warpedlands.wlcommands.annotations.CommandRoot;
+import org.bukkit.Bukkit;
 
 import java.util.UUID;
 
@@ -11,7 +12,7 @@ public class GodCommand {
 
     @CommandExecute(".")
     public void execute(UUID player) {
-
+        Bukkit.getServer().getPlayer(player).sendMessage("godddd");
     }
 
 

@@ -1,4 +1,4 @@
-package com.warpedlands.wlcommands;
+package com.warpedlands.wlcommands.managers;
 
 import java.lang.annotation.Annotation;
 import java.util.HashMap;

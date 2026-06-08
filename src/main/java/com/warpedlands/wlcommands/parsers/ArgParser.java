@@ -1,7 +1,6 @@
 package com.warpedlands.wlcommands.parsers;
 
-import com.warpedlands.wlcommands.ArgManager;
-import com.warpedlands.wlcommands.exceptions.ArgumentParsingException;
+import com.warpedlands.wlcommands.managers.ArgManager;
 import com.warpedlands.wlcommands.meta.ArgMeta;
 
 import java.lang.reflect.Method;
@@ -28,7 +27,6 @@ public class ArgParser {
     }
 
     private ArgMeta getArgMetaFromParam(Parameter parameter) {
-        parameter.get
 
         return new ArgMeta(parameter.getClass(),)
     }
